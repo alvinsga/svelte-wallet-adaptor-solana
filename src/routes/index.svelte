@@ -22,6 +22,7 @@
 		SystemProgram,
 		Transaction
 	} from '@solana/web3.js';
+	import { Buffer } from 'buffer';
 
 	const localStorageKey = 'walletAdapter';
 	// Change this to the desired Network Cluster
@@ -65,6 +66,8 @@
 	}
 
 	onMount(async () => {
+		global.Buffer = Buffer;
+
 		// These will support the most popular wallets  but you can find the
 		// full list of wallets here: https://github.com/solana-labs/wallet-adapter#wallets
 		const adaptors = [

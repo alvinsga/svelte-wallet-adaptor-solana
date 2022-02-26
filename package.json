@@ -12,6 +12,7 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"buffer": "^6.0.3",
 		"@solana/wallet-adapter-base": "^0.9.3",
 		"@solana/wallet-adapter-wallets": "^0.15.4",
 		"@solana/web3.js": "^1.35.1",
